@@ -17,11 +17,11 @@ inputs:
 	int macdAvgType(1) [DisplayName = "MACD Avg Type (0,1,2,3)", ToolTip = ""],
 	types(null) [DisplayName = "0=simple;1=exp;2=weighted;3=hull", ToolTip = ""],
 	//---------- Alert Inputs
-	bool alertIfCrossUp(False) [DisplayName = "Alert if Cross Up", ToolTip = ""],
-	bool alertIfCrossDown(False) [DisplayName = "Alert if Cross Down", ToolTip = ""],
-	bool alertIfUptrendEnd(False) [DisplayName = "Alert if Uptrend Ends", ToolTip = ""],
-	bool alertIfDowntrendEnd(False) [DisplayName = "Alert if Downtrend Ends", ToolTip = ""],
-    bool alertIfKbbFires(True) [DisplayName = "Alert if KBB Fires", ToolTip = ""],
+	bool alertIfCrossUp(True) [DisplayName = "Alert if Cross Up", ToolTip = ""],
+	bool alertIfCrossDown(True) [DisplayName = "Alert if Cross Down", ToolTip = ""],
+	bool alertIfUptrendEnd(True) [DisplayName = "Alert if Uptrend Ends", ToolTip = ""],
+	bool alertIfDowntrendEnd(True) [DisplayName = "Alert if Downtrend Ends", ToolTip = ""],
+    bool alertIfKbbFires(False) [DisplayName = "Alert if KBB Fires", ToolTip = ""],
 	//---------- Color Inputs
 	int posUpColor(Cyan) [DisplayName = "Color MACD Up > 0", ToolTip = ""],
 	int posDownColor(Blue) [DisplayName = "Color MACD Down > 0", ToolTip = ""],
