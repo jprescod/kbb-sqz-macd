@@ -1,0 +1,45 @@
+22:23:03.775[INFO][_777_million.py-398]GodHelpUs!!!!!|lines|{"actual_buy_stop": 410.065, "actual_stop_loss": 405.11,
+"alert_datetime": "2022-09-13T06:32:00", "away_amount": null, "away_percent": null, "away_price": null,
+"bar_size_minutes": 1, "original_bar_size_minutes": null, "bars": null, "bars_5_second": null, "bars_5_minute": null,
+"bars_5_minute_vix": null, "bars_option_2_minute": null, "base_count": 0, "buy_stop": 410.065, "buy_stop_override":
+null, "buy_stop_option": null, "buy_stop_option_average": null, "buy_stop_1st_valid_leg_out": null,
+"buy_stop_1st_valid_leg_out_bar": null, "buy_stop_1st_valid_leg_out_bar_index": null, "buy_stop_bar": {"date":
+"2022-09-13T06:31:00", "open": 402.23, "high": 402.83, "low": 402.04, "close": 402.83, "volume": 5493.99, "average":
+402.479, "barCount": 2377}, "buy_stop_bar_index": 719, "buy_stop_bar_out": null, "found_1st_valid_leg_out": false,
+"found_lines": true, "get_in": true, "high_of_group": null, "high_of_group_bar": null, "high_of_group_bar_index":
+null, "hit_it": null, "how_many_times": 0, "how_was_it": "1|SELL|05:32:00 AM 09/13/2022|405.11|415.02|Trying to apply
+bobs strategy: 555_million_-50",
+
+"how_was_it_daily": "1|SELL|05:32:00 AM 09/13/2022|405.11|415.02|None", "invalid":
+false, "invalid_bar": null, "invalid_bar_index": null, "invalid_reason": null, "jenkins_build_tag":
+"jenkins-update_entities_fidelity_MIM_BUYSTOP-222932", "leg_in_1st_bar": null, "leg_in_1st_bar_index": null,
+"leg_in_count": 0, "leg_out_count": 0, "buying_territory": true, "low_of_group": null, "low_of_group_bar": null,
+"low_of_group_bar_index": null, "start_index": 719, "stop_loss": 405.11, "stop_loss_override": null,
+"stop_loss_1st_valid_leg_out": null, "trade_start_bar": {"date": "2022-09-13T06:31:00", "open": 402.23, "high":
+402.83, "low": 402.04, "close": 402.83, "volume": 5493.99, "average": 402.479, "barCount": 2377},
+"trade_start_bar_index": 719, "trade_stop_bar": null, "trade_stop_bar_index": null, "underlying_symbol": "SPY",
+"momentum_stop_loss": null, "away_from_sl_amount": null, "away_from_sl_percent": null, "away_from_sl_price": null,
+"buy_stop_bar_lower_high": null, "buy_stop_bar_higher_low": null, "second_soldier_bar": null,
+"second_soldier_bar_index": null, "second_soldier_bar_outside_buy_stop": null, "last_soldier_made_it_to_first_base":
+null, "how_many_soldiers": null, "trade_entry_bar": null, "trade_entry_bar_index": null,
+"trade_entry_bar_index_2_minute": null, "trade_entry_bar_index_30_second": null, "first_trade_milestone_index": null,
+"first_trade_milestone_bar": null, "trade_entry_price": null, "trade_exit_price": null, "trade_exit_price_option":
+null, "trade_exit_price_option_average": null, "position_in_day": null, "backtest_from_tracker": null,
+"periods_to_wait_before_transition_to_profit_maximizer": null, "eleven_million": false, "trade_strategy":
+"reversal_555_-50", "only_flip": null, "zone": 0, "zone_direction": 0, "zone_direction_target": 0, "zone_target": 0,
+"risk_zone": null, "risk_zone2": null, "risk_zone_444": 6, "continuation_pnl_positive": null, "continuation": false,
+"not_enough_risk": false, "not_enough_risk_after_override": false, "touches": 0, "touch": null,
+"close_minute_threshold": 1, "retrace_threshold": null, "retrace_threshold_back": 0, "triggered_pre_market": false,
+"day_of_zone_retrace_factor": 1.9916952573158426, "days_in_between_retrace_factor": 1.9916952573158426,
+"retrace_factor": 1.9916952573158426, "sequence_index": null, "territory": [384, 1, "SPY", "05:32:00 AM 09/13/2022",
+405.11, 415.02, 1, 405.11, "EOD|We hit it for the first time at 89.70736629667017% from sl!!!!|We sold at EOD after 1
+wins and were 0.8304742684157347% from next win!", false, 415.02, "05:31:00 AM 09/13/2022", "training_the_eyes",
+"training_the_eyes", 395.2000000000001, "05:26:00 AM 09/13/2022", "05:32:00 AM 09/13/2022", "01:00:00 PM 09/13/2022",
+405.11, 14.0, 4.0, "None", "None", true, false, 0.8970736629667018, 6, "2022-09-13 05:32:00.000"], "zone_index": null,
+"rz": [0], "fi": false, "jj": true, "p": -50, "ziz_supporting": 0, "ziz_opposing": 0, "reversal_ddd": false,
+"continuation_ddd": false, "OF_THE_BATTLE_": null, "bd": true}
+
+06:37:55.105[INFO][ib.py-659]placeOrder: New order Trade(contract=Option(conId=516191366, symbol='SPY', lastTradeDateOrContractMonth='20220916', strike=388.0,
+right='C'
+, multiplier='100', exchange='SMART', currency='USD', localSymbol='SPY   220916C00388000', tradingClass='SPY'), order=Order(orderId=13, clientId=217829995, action='BUY', totalQuantity=4, orderType='MKT', tif='DAY', orderRef='217829_w_b_0632_reversal_555_-50', algoStrategy='Adaptive', algoParams=[TagValue(tag='adaptivePriority', value='Patient')],
+conditions=[PriceCondition(condType=1, conjunction='a', isMore=False, price=395.42, conId=756733, exch='SMART', triggerMethod=0)], usePriceMgmtAlgo=True), orderStatus=OrderStatus(orderId=13, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2022, 9, 13, 13, 37, 55, 105169, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)])
