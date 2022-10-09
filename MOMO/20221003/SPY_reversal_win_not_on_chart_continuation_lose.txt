@@ -1,0 +1,28 @@
+line:
+06:42:13.663[INFO][_777_million.py-398]GodHelpUs!!!!!|lines|{"actual_buy_stop": 361.625, "actual_stop_loss": 361.25
+
+CALL|reversal 50% thereof buy:
+conditions=[PriceCondition(condType=1, conjunction='a', isMore=True, price=361.625, conId=756733, exch='SMART', triggerMethod=0)]
+
+reversal sell:
+conditions=[
+PriceCondition(condType=1, conjunction='o', isMore=True, price=441.64, conId=756733, exch='SMART', triggerMethod=0),
+PriceCondition(condType=1, conjunction='o', isMore=False, price=361.25, conId=756733, exch='SMART', triggerMethod=0)]
+
+PUT|continuation buy:
+PriceCondition(condType=1, conjunction='a', isMore=False, price=361.25, conId=756733, exch='SMART', triggerMethod=0)
+
+continuation sell:
+conditions=[
+PriceCondition(condType=1, conjunction='o', isMore=False, price=281.4825, conId=756733, exch='SMART', triggerMethod=0),
+PriceCondition(condType=1, conjunction='o', isMore=True, price=361.625, conId=756733, exch='SMART', triggerMethod=0)
+
+continuation transition to profit maximizer:
+06:59:13.574[INFO][utils.py-339]We are at: 360.17. Did we reach the goal? Pt:360.125 Sl:361.625 Seconds:435
+06:59:22.570[INFO][utils.py-339]Profit target hit: 360.125. Proceed!
+06:59:22.579[INFO][utils.py-339]We are in double dip mode. Profit target reached. Go to profit maximizer!!!!!!!
+
+conditions=[PriceCondition(condType=1, conjunction='o', isMore=False, price=281.4825, conId=756733, exch='SMART', triggerMethod=0), PriceCondition(condType=1, conjunction='o', isMore=True, price=360.97, conId=756733, exch='SMART', triggerMethod=0)], usePriceMgmtAlgo=True)
+
+
+

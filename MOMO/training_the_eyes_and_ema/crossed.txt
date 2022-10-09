@@ -1,0 +1,1 @@
+=IF(OR(AND(actual_buy_stop>actual_stop_loss,ema_divergence<0),AND(actual_buy_stop<actual_stop_loss,ema_divergence>0)),1,0)

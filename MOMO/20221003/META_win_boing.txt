@@ -1,0 +1,2 @@
+http://money.boing.ydns.eu/job/update_entities_fidelity_MIM_BUYSTOP/38553/
+07:21:30.510[INFO][_777_million.py-1461]Querying S3 cache for full url key: https://boing-money-maker.s3.us-east-2.amazonaws.com/public/lines/2022/10/03/_META_0715_5_mins_S_138.07_139.17_1.1.txt

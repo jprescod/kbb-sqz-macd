@@ -1,0 +1,350 @@
+11:38:05.506[INFO][main.py-280]Resolved IBKR host IP as: '18.219.21.141'
+11:38:05.509[INFO][main.py-351]Opening Chrome driver ...
+11:38:05.509[INFO][main.py-357]Setting IBKR host to: 18.219.21.141 ...
+11:38:05.509[INFO][main.py-67]No need for a browser in no_fidelity mode so no need to open Chrome!
+11:38:05.509[INFO][main.py-121]Processing entity: Entity(name='options_summary', url_id='positions/optionsPairing?ACCOUNT=', has_csv=True, second_action=<function get_net_amounts at 0x000001487F80A1F0>, resolved_url=None).
+11:38:05.509[INFO][main.py-144]Performing second action prior to download: <function get_net_amounts at 0x000001487F80A1F0>.
+11:38:05.510[INFO][credit_spread.py-452]Parsed credit spreads input list with size: 16
+11:38:05.510[INFO][credit_spread.py-457]Each spread will have the source set to: http://money.boing.ydns.eu/job/update_entities_fidelity_MIM_BUYSTOP/9303/
+11:38:05.573[INFO][credit_spread.py-416]Is the time now:2022-09-21 11:38:05.573043-07:00 preMarketOrWeekendOrHoliday orAfterHours=False??????????????????????
+11:38:05.573[INFO][credit_spread.py-433]No!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11:38:05.573[INFO][credit_spread.py-416]Is the time now:2022-09-21 11:38:05.573043-07:00 preMarketOrWeekendOrHoliday orAfterHours=False??????????????????????
+11:38:05.574[INFO][credit_spread.py-433]No!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11:38:05.574[INFO][credit_spread.py-416]Is the time now:2022-09-21 11:38:05.574013-07:00 preMarketOrWeekendOrHoliday orAfterHours=False??????????????????????
+11:38:05.574[INFO][credit_spread.py-433]No!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11:38:05.574[INFO][credit_spread.py-416]Is the time now:2022-09-21 11:38:05.574013-07:00 preMarketOrWeekendOrHoliday orAfterHours=False??????????????????????
+11:38:05.574[INFO][credit_spread.py-433]No!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11:38:05.574[INFO][credit_spread.py-416]Is the time now:2022-09-21 11:38:05.574013-07:00 preMarketOrWeekendOrHoliday orAfterHours=False??????????????????????
+11:38:05.575[INFO][credit_spread.py-433]No!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11:38:05.575[INFO][credit_spread.py-416]Is the time now:2022-09-21 11:38:05.575037-07:00 preMarketOrWeekendOrHoliday orAfterHours=False??????????????????????
+11:38:05.575[INFO][credit_spread.py-433]No!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11:38:05.575[INFO][trade.py-70]Monitoring credit spreads with size: 16
+11:38:05.582[INFO][trade_idea.py-84]Caller said they don't want to slide in them DMs!
+11:38:05.583[INFO][options.py-614]SPREAD-AAPL220923C10-AAPL220923C2840-buyoption-buystop-1
+11:38:05.583[INFO][options.py-874]https://oltx.fidelity.com/ftgw/fbc/oftrade/EntrOrder?ACCOUNT={AQAAABAAAAAQk4xXrotpqxda+/AHlisgVZ5i49Kj9xAl15hrw+SVxwM=}&ORDER_TYPE=O&PRICE_TYPE=M&SYMBOL=-AAPL220923C2840&QTY=1&ORDER_ACTION=BOPEN
+11:38:05.746[INFO][options.py-624]Getting stock real-time price from Wallstreet!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11:38:05.787[INFO][options.py-598]Got underlying change from Wallstreet!
+11:38:05.787[INFO][options.py-604]Finding the least expensive option assuming that it is the nearest ITM option!
+11:38:05.787[INFO][trade_idea.py-3062]**************** BUY STOP PARAMETERS INITIAL ****************
+11:38:05.787[INFO][trade_idea.py-3063]underlying_price_at_time_of_alert = 433.08
+11:38:05.787[INFO][trade_idea.py-3064]desired_move = somewhere
+11:38:05.787[INFO][trade_idea.py-3065]buy_stop_up = 156.94
+11:38:05.787[INFO][trade_idea.py-3066]buy_stop_down = 156.11
+11:38:05.787[WARNING][trade_idea.py-897]Looking for 1-minute lines!
+11:38:05.789[INFO][ibkr.py-255]bar history request durationStr=43200 S
+11:38:05.789[INFO][utils.py-482]Requesting bars NOT to be updated as time goes along!
+11:38:05.789[INFO][utils.py-497]Start historical bar query at time: 2022-09-21 11:38:05.789466
+11:38:05.789[INFO][utils.py-498]contract: Stock(symbol='AAPL', exchange='SMART', currency='USD')
+11:38:05.789[INFO][utils.py-499]endDateTime: 
+11:38:05.789[INFO][utils.py-500]durationStr: 43200 S
+11:38:05.789[INFO][utils.py-501]barSizeSetting: 1 min
+11:38:05.790[INFO][utils.py-502]keepUpToDate: False
+11:38:05.790[INFO][utils.py-508]I think this means contract is not qualified yet :) ...
+11:38:05.790[INFO][utils.py-205]*** CREATING IBKR CLIENT WITH ID: 9303912 ***
+11:38:05.790[INFO][client.py-203]Connecting to 18.219.21.141:7496 with clientId 9303912...
+11:38:05.903[INFO][client.py-211]Connected
+11:38:06.091[INFO][client.py-335]Logged on to server version 163
+11:38:06.330[INFO][client.py-217]API connection ready
+11:38:06.917[INFO][ib.py-1665]Synchronization complete
+11:38:07.518[INFO][utils.py-588]Stop historical bar query at time: 2022-09-21 11:38:07.518837
+11:38:07.519[INFO][utils.py-589]Total execution time: 0:00:01.729371
+11:38:07.519[INFO][utils.py-594]Cancelling historical data request!
+11:38:07.519[INFO][utils.py-1635]We supplied our own lines since we see the bar size set to: 1
+11:38:08.469[INFO][credit_spread.py-416]Is the time now:2022-09-21 11:38:08.469268-07:00 preMarketOrWeekendOrHoliday orAfterHours=True??????????????????????
+11:38:08.469[INFO][credit_spread.py-433]No!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11:38:08.469[INFO][utils.py-3187]Querying S3 cache for full url key: https://boing-money-maker.s3.us-east-2.amazonaws.com/public/lines/2022/09/21/_AAPL_11:37:20_AM_09/21/2022_1_min_B_156.94_156.11_0.83.txt
+11:38:08.893[INFO][credentials.py-1180]Found credentials in environment variables.
+11:38:09.029[INFO][utils.py-3231]Uploading key to S3 cache for bucket: boing-money-maker key: public/lines/2022/09/21/_AAPL_11:37:20_AM_09/21/2022_1_min_B_156.94_156.11_0.83.txt
+11:38:09.468[ERROR][utils.py-3239]Couldn't cache these lines. TAKE EM! Another job might DOUBLE DIP MAYBE!?!?!?!?
+Traceback (most recent call last):
+  File "C:\Program Files\Python39\lib\site-packages\boto3\s3\transfer.py", line 288, in upload_file
+    future.result()
+  File "C:\Program Files\Python39\lib\site-packages\s3transfer\futures.py", line 103, in result
+    return self._coordinator.result()
+  File "C:\Program Files\Python39\lib\site-packages\s3transfer\futures.py", line 266, in result
+    raise self._exception
+  File "C:\Program Files\Python39\lib\site-packages\s3transfer\tasks.py", line 139, in __call__
+    return self._execute_main(kwargs)
+  File "C:\Program Files\Python39\lib\site-packages\s3transfer\tasks.py", line 162, in _execute_main
+    return_value = self._main(**kwargs)
+  File "C:\Program Files\Python39\lib\site-packages\s3transfer\upload.py", line 758, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+  File "C:\Program Files\Python39\lib\site-packages\botocore\client.py", line 508, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "C:\Program Files\Python39\lib\site-packages\botocore\client.py", line 915, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessControlListNotSupported) when calling the PutObject operation: The bucket does not allow ACLs
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\BOING\workspace\update_entities_fidelity_MIM_BUYSTOP\utils.py", line 3232, in take_a_chance
+    s3.upload_file("readme.txt", s3_bucket, s3_key, ExtraArgs={'ACL': 'public-read'})
+  File "C:\Program Files\Python39\lib\site-packages\boto3\s3\inject.py", line 143, in upload_file
+    return transfer.upload_file(
+  File "C:\Program Files\Python39\lib\site-packages\boto3\s3\transfer.py", line 294, in upload_file
+    raise S3UploadFailedError(
+boto3.exceptions.S3UploadFailedError: Failed to upload readme.txt to boing-money-maker/public/lines/2022/09/21/_AAPL_11:37:20_AM_09/21/2022_1_min_B_156.94_156.11_0.83.txt: An error occurred (AccessControlListNotSupported) when calling the PutObject operation: The bucket does not allow ACLs
+11:38:09.471[INFO][utils.py-3317]DONE: See if one of our 18 buy stop|stop loss adjustments or profit maximizers help!!!!
+11:38:09.471[ERROR][utils.py-3464]No strategies for risk zone: 2. These work: {'_1': [], '_2': [], '_3': [], '_4': [], '_5': [], '_6': []}!!!!!!!!
+NoneType: None
+11:38:09.471[INFO][utils.py-632]Our LINES ANALYSIS:|lines|{"actual_buy_stop": 156.94, "actual_stop_loss": 156.11, "alert_datetime": "2022-09-21T11:35:00", "away_amount": null, "away_percent": null, "away_price": null, "bar_size_minutes": 1, "original_bar_size_minutes": null, "bars": null, "bars_5_second": null, "bars_5_minute": null, "bars_5_minute_vix": null, "bars_option_2_minute": null, "base_count": 0, "buy_stop": 156.94, "buy_stop_override": null, "buy_stop_option": null, "buy_stop_option_average": null, "buy_stop_1st_valid_leg_out": null, "buy_stop_1st_valid_leg_out_bar": null, "buy_stop_1st_valid_leg_out_bar_index": null, "buy_stop_bar": null, "buy_stop_bar_index": null, "buy_stop_bar_out": null, "found_1st_valid_leg_out": false, "found_lines": true, "get_in": null, "high_of_group": null, "high_of_group_bar": null, "high_of_group_bar_index": null, "hit_it": null, "how_many_times": 0, "how_was_it": null, "how_was_it_daily": null, "invalid": false, "invalid_bar": null, "invalid_bar_index": null, "invalid_reason": null, "jenkins_build_tag": "jenkins-update_entities_fidelity_MIM_BUYSTOP-9303", "leg_in_1st_bar": null, "leg_in_1st_bar_index": null, "leg_in_count": 0, "leg_out_count": 0, "buying_territory": true, "low_of_group": null, "low_of_group_bar": null, "low_of_group_bar_index": null, "start_index": 0, "stop_loss": 156.11, "stop_loss_override": null, "stop_loss_1st_valid_leg_out": null, "trade_start_bar": null, "trade_start_bar_index": null, "trade_stop_bar": null, "trade_stop_bar_index": null, "underlying_symbol": "AAPL", "momentum_stop_loss": null, "away_from_sl_amount": null, "away_from_sl_percent": null, "away_from_sl_price": null, "buy_stop_bar_lower_high": null, "buy_stop_bar_higher_low": null, "second_soldier_bar": null, "second_soldier_bar_index": null, "second_soldier_bar_outside_buy_stop": null, "last_soldier_made_it_to_first_base": null, "how_many_soldiers": null, "trade_entry_bar": null, "trade_entry_bar_index": null, "trade_entry_bar_index_2_minute": null, "trade_entry_bar_index_30_second": null, "first_trade_milestone_index": null, "first_trade_milestone_bar": null, "trade_entry_price": null, "trade_exit_price": null, "trade_exit_price_option": null, "trade_exit_price_option_average": null, "position_in_day": null, "backtest_from_tracker": null, "periods_to_wait_before_transition_to_profit_maximizer": null, "eleven_million": false, "trade_strategy": "reversal_None_ddd", "only_flip": null, "zone": 0, "zone_direction": 0, "zone_direction_target": 0, "zone_target": 0, "risk_zone": null, "risk_zone2": null, "risk_zone_444": null, "continuation_pnl_positive": null, "continuation_done_before_trigger": null, "not_enough_risk": false, "not_enough_risk_after_override": false, "touches": null, "touch": null, "close_minute_threshold": null, "retrace_threshold": null, "retrace_threshold_back": null, "triggered_pre_market": null, "day_of_zone_retrace_factor": null, "days_in_between_retrace_factor": null, "retrace_factor": null, "sequence_index": null, "territory": null, "zone_index": null, "rz": null, "fi": null, "jj": true, "p": null, "ziz_supporting": 0, "ziz_opposing": 0, "reversal_ddd": null, "continuation_ddd": null}
+11:38:09.472[INFO][utils.py-1674]SCORPION LOVES OUR MANUALLY ENTERED LINES AND WILL PLACE A TRADE~~~~~!!! WOOHOO!!!!!!!!!!!!!
+11:38:09.472[INFO][lines.py-502]Returning our lines ... well the entry based on them! EXCITING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11:38:09.472[WARNING][athena.py-1082]Minimum risk too small. Must risk at least 22 cents!
+11:38:09.472[WARNING][athena.py-1082]Minimum risk too small. Must risk at least 22 cents!
+11:38:09.472[INFO][trade_idea.py-1547]Found our LINES. GET IN! bs:156.94 sl: 156.11!!!!!!!!!!!!!!!!!!!!!!!!!
+11:38:09.472[INFO][utils.py-632]Our LINES ANALYSIS:|lines|{"actual_buy_stop": 156.94, "actual_stop_loss": 156.11, "alert_datetime": "2022-09-21T11:35:00", "away_amount": null, "away_percent": null, "away_price": null, "bar_size_minutes": 1, "original_bar_size_minutes": null, "bars": null, "bars_5_second": null, "bars_5_minute": null, "bars_5_minute_vix": null, "bars_option_2_minute": null, "base_count": 0, "buy_stop": 156.94, "buy_stop_override": null, "buy_stop_option": null, "buy_stop_option_average": null, "buy_stop_1st_valid_leg_out": null, "buy_stop_1st_valid_leg_out_bar": null, "buy_stop_1st_valid_leg_out_bar_index": null, "buy_stop_bar": null, "buy_stop_bar_index": null, "buy_stop_bar_out": null, "found_1st_valid_leg_out": false, "found_lines": true, "get_in": true, "high_of_group": null, "high_of_group_bar": null, "high_of_group_bar_index": null, "hit_it": null, "how_many_times": 0, "how_was_it": null, "how_was_it_daily": null, "invalid": false, "invalid_bar": null, "invalid_bar_index": null, "invalid_reason": null, "jenkins_build_tag": "jenkins-update_entities_fidelity_MIM_BUYSTOP-9303", "leg_in_1st_bar": null, "leg_in_1st_bar_index": null, "leg_in_count": 0, "leg_out_count": 0, "buying_territory": true, "low_of_group": null, "low_of_group_bar": null, "low_of_group_bar_index": null, "start_index": 0, "stop_loss": 156.11, "stop_loss_override": null, "stop_loss_1st_valid_leg_out": null, "trade_start_bar": null, "trade_start_bar_index": null, "trade_stop_bar": null, "trade_stop_bar_index": null, "underlying_symbol": "AAPL", "momentum_stop_loss": null, "away_from_sl_amount": null, "away_from_sl_percent": null, "away_from_sl_price": null, "buy_stop_bar_lower_high": null, "buy_stop_bar_higher_low": null, "second_soldier_bar": null, "second_soldier_bar_index": null, "second_soldier_bar_outside_buy_stop": null, "last_soldier_made_it_to_first_base": null, "how_many_soldiers": null, "trade_entry_bar": null, "trade_entry_bar_index": null, "trade_entry_bar_index_2_minute": null, "trade_entry_bar_index_30_second": null, "first_trade_milestone_index": null, "first_trade_milestone_bar": null, "trade_entry_price": null, "trade_exit_price": null, "trade_exit_price_option": null, "trade_exit_price_option_average": null, "position_in_day": null, "backtest_from_tracker": null, "periods_to_wait_before_transition_to_profit_maximizer": null, "eleven_million": false, "trade_strategy": "reversal_None_ddd", "only_flip": null, "zone": 0, "zone_direction": 0, "zone_direction_target": 0, "zone_target": 0, "risk_zone": null, "risk_zone2": null, "risk_zone_444": null, "continuation_pnl_positive": null, "continuation_done_before_trigger": null, "not_enough_risk": false, "not_enough_risk_after_override": false, "touches": null, "touch": null, "close_minute_threshold": null, "retrace_threshold": null, "retrace_threshold_back": null, "triggered_pre_market": null, "day_of_zone_retrace_factor": null, "days_in_between_retrace_factor": null, "retrace_factor": null, "sequence_index": null, "territory": null, "zone_index": null, "rz": null, "fi": null, "jj": true, "p": null, "ziz_supporting": 0, "ziz_opposing": 0, "reversal_ddd": null, "continuation_ddd": null}
+11:38:09.472[INFO][lines.py-502]Returning our lines ... well the entry based on them! EXCITING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11:38:09.472[ERROR][trade_idea.py-1633]ARGH! WE ARE SHORT BIASED! Strategy: Short;somewhere
+NoneType: None
+11:38:09.472[ERROR][trade_idea.py-1635]SO LET'S STRAIGHTEN THAT OUT! Strategy: Long;somewhere
+NoneType: None
+11:38:09.472[INFO][trade_idea.py-1640]Looks like we're placing an order in IBKR to buy a CALL once price crosses above: 156.94?!?!?!
+11:38:09.472[INFO][trade_idea.py-195]BACKTEST RESULT: 999
+11:38:09.473[INFO][options.py-109]***************** BUY STOP PRICE: 156.94 156.94 !!!!!!!!!!!
+11:38:09.475[INFO][utils.py-260]*** CREATING IBKR CLIENT WITH ID: 1 ***
+11:38:09.476[INFO][client.py-203]Connecting to 18.219.21.141:7496 with clientId 1...
+11:38:09.556[INFO][client.py-211]Connected
+11:38:09.653[INFO][client.py-335]Logged on to server version 163
+11:38:09.881[INFO][client.py-217]API connection ready
+11:38:10.340[INFO][ib.py-1665]Synchronization complete
+11:38:10.340[INFO][utils.py-923]Get contracts from open orders and positions!
+11:38:10.340[INFO][utils.py-924]List open orders via openTrades
+11:38:10.340[INFO][utils.py-930]List positions! Only open?!?!? YES!!!!!!!!!!!!!!!!!
+11:38:10.340[INFO][ib.py-280]Disconnecting from 18.219.21.141:7496, 113 B sent in 7 messages, 34.7 kB received in 467 messages, session time 865 ms.
+11:38:10.340[INFO][client.py-229]Disconnecting
+11:38:10.340[INFO][utils.py-937]Got a bunch of contracts with size: 0 and details
+:[]
+11:38:10.340[INFO][options.py-169]Already requested strikes whether filled or not:
+[]
+11:38:10.613[INFO][utils.py-785]Getting option: symbol: AAPL, expiration:2022-09-23 00:00:00, p_or_c:C
+11:38:10.614[INFO][utils.py-823]Computed strike interval: 2.5. Getting nearest ITM strike!
+11:38:10.614[INFO][utils.py-828]We will be moving EVEN further in the direction by increment of: 0
+11:38:10.614[INFO][utils.py-850]The computed strike is: 155.0
+11:38:10.614[INFO][utils.py-851]Selecting the computed strike ...
+11:38:40.310[INFO][options.py-778]We're on wallstreet baby!
+11:38:43.008[INFO][options.py-461]Option greeks etc:
+11:38:43.008[INFO][options.py-462]bid 2.59
+11:38:43.008[INFO][options.py-463]ask 2.63
+11:38:43.009[INFO][options.py-464]price 2.57
+11:38:43.009[INFO][options.py-465]change -999
+11:38:43.009[INFO][options.py-466]cp -999
+11:38:43.009[INFO][options.py-467]open_interest 29929
+11:38:43.009[INFO][options.py-468]volume 17606
+11:38:43.009[INFO][options.py-469]implied volatility: -999
+11:38:43.009[INFO][options.py-470]delta -999
+11:38:43.009[INFO][options.py-471]gamma -999
+11:38:43.010[INFO][options.py-472]vega -999
+11:38:43.010[INFO][options.py-473]rho -999
+11:38:43.010[INFO][options.py-474]theta -999
+11:38:43.010[INFO][options.py-475]expiration 23-09-2022
+11:38:43.010[INFO][options.py-235]The NET_AMOUNT midpoint is: None
+11:38:43.011[INFO][options.py-238]The net debit stop loss is: 156.11
+11:38:43.011[INFO][options.py-239]The underlying symbol is: AAPL
+11:38:43.011[INFO][options.py-240]The NET_AMOUNT(spread=mid|option=mid|last,stock=last) as float is: -2.57
+11:38:43.011[INFO][options.py-241]The underlying price as float is: 156.82
+11:38:43.011[INFO][options.py-242]The underlying change as float is: -0.07998657
+11:38:43.012[INFO][options.py-279]The Ask/Bid ratio is 1.0154440154440154. Ask: 2.63 Bid: 2.59
+11:38:43.012[INFO][options.py-285]Minimum option volume: 100. Option volume: 17606!!!!!!!!!!!!!!!!
+11:38:43.012[INFO][journal.py-107]2
+11:38:43.012[INFO][options.py-287]DTE: 2
+11:38:43.013[INFO][options.py-337]Open interest: 29929
+11:38:43.016[WARNING][trade.py-162][FAIL JENKINS JOB] if MIM/P3 since this means BUY STOP TRIGGERED![1]
+11:38:43.016[INFO][trade.py-176]Waiting forever for move ...
+11:38:43.016[INFO][main.py-54]No need for a browser in no_fidelity mode so no need to close Chrome!
+11:38:43.016[INFO][trade_idea.py-3062]**************** BUY STOP PARAMETERS INITIAL ****************
+11:38:43.016[INFO][trade_idea.py-3063]underlying_price_at_time_of_alert = 433.08
+11:38:43.017[INFO][trade_idea.py-3064]desired_move = somewhere
+11:38:43.017[INFO][trade_idea.py-3065]buy_stop_up = 156.94
+11:38:43.017[INFO][trade_idea.py-3066]buy_stop_down = 156.11
+11:38:43.017[INFO][trade.py-402]***** CURRENT VALUES
+11:38:43.017[INFO][trade.py-403]price:156.82
+11:38:43.017[INFO][trade.py-404]buy_stop_up = 156.94
+11:38:43.017[INFO][trade.py-405]buy_stop_down = 156.11
+11:38:43.018[INFO][trade.py-525]We are about to enter since PRICE CHANGE between:
+11:38:43.018[INFO][trade.py-526]underlying_last_price: 156.82
+11:38:43.018[INFO][trade.py-527]AND underlying_price_at_time_of_alert: 433.08
+11:38:43.018[INFO][trade.py-528]price is Trade-Ideas found 3 red bars!
+11:38:43.018[INFO][trade.py-183]Wallstreet saved 0.0019965171813964844 seconds of browser time!
+11:38:43.018[INFO][main.py-67]No need for a browser in no_fidelity mode so no need to open Chrome!
+11:38:43.018[INFO][trade.py-194]No need to get updated stock price in no_fidelity mode!
+11:38:43.019[INFO][utils.py-384]Computing quantity based on risk: $10000. Original quantity: 1
+11:38:43.019[INFO][utils.py-384]Getting option from IBKR symbol:AAPL exp:20220923 str:155
+11:38:43.019[INFO][client.py-362]Disconnected.
+11:38:43.235[INFO][credit_spread.py-416]Is the time now:2022-09-21 11:38:43.235545-07:00 preMarketOrWeekendOrHoliday orAfterHours=True??????????????????????
+11:38:43.236[INFO][credit_spread.py-433]No!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11:38:43.237[INFO][utils.py-384]Getting the option delta from IBKR. Request sent. Waiting up to 30 seconds for population!!!!!!!!!!!!!
+11:38:43.237[INFO][utils.py-384]Waited 0/60 seconds for the greeks to arrive!
+11:38:45.244[INFO][utils.py-384]The greeks arrived!
+11:38:45.245[INFO][utils.py-384]Greeks: Ticker(contract=Option(conId=577819309, symbol='AAPL', lastTradeDateOrContractMonth='20220923', strike=155.0, right='C', multiplier='100', exchange='SMART', currency='USD', localSymbol='AAPL  220923C00155000', tradingClass='AAPL'), time=datetime.datetime(2022, 9, 21, 18, 38, 44, 581556, tzinfo=datetime.timezone.utc), bid=3.35, bidSize=1041.0, ask=3.45, askSize=1065.0, last=3.4, lastSize=2.0, volume=21889.0, high=4.8, low=2.31, close=3.86, halted=0.0, bidGreeks=OptionComputation(tickAttrib=0, impliedVol=0.510465451168113, delta=0.6267167598015535, optPrice=3.3499999046325684, pvDividend=0.0, gamma=0.06317790889493244, vega=0.04466883129641408, theta=-0.5624773761158636, undPrice=156.79), askGreeks=OptionComputation(tickAttrib=0, impliedVol=0.5219500710805016, delta=0.6243401086154107, optPrice=3.450000047683716, pvDividend=0.0, gamma=0.06191438485755597, vega=0.044671061556843306, theta=-0.5760757633562588, undPrice=156.79), lastGreeks=OptionComputation(tickAttrib=0, impliedVol=0.5290506290346879, delta=0.6229258176096372, optPrice=3.4000000953674316, pvDividend=0.0, gamma=0.06115786693951769, vega=0.04467235310316209, theta=-0.5844834361304883, undPrice=156.79), modelGreeks=OptionComputation(tickAttrib=0, impliedVol=0.516794261380801, delta=0.6253931123798052, optPrice=3.4345690951196017, pvDividend=0.0, gamma=0.06247539120610666, vega=0.04467008256841787, theta=-0.5699709538074262, undPrice=156.79))
+11:38:45.245[INFO][utils.py-384]Got the option delta: 0.6229258176096372
+11:38:45.245[INFO][utils.py-384]Getting latest option delta!
+11:38:45.245[INFO][utils.py-384]Previous delta: unknown
+11:38:45.245[INFO][utils.py-384]Latest delta: 0.6229258176096372
+11:38:45.245[INFO][utils.py-384]***************** CURRENT DELTA ABSOLUTE VALUE: 0.6229258176096372 0.6229258176096372 !!!!!!!!!!!
+11:38:45.246[INFO][utils.py-384]***************** DELTA BASED RISK/CONTRACT: 54.46863349178568 54.46863349178568 !!!!!!!!!!!
+11:38:45.246[INFO][utils.py-384]***************** TRAILING STOP LOSS DOLLAR (1X): 0.517028428615989 !!!!!!!!!!!
+11:38:45.246[INFO][utils.py-384]***************** RISK PER TRADE: 500.0 500.0 !!!!!!!!!!!
+11:38:45.246[INFO][utils.py-384]***************** DESIRED QUANTITY: 9 9 !!!!!!!!!!!
+11:38:45.246[INFO][utils.py-384]***************** MAX TRADE AMOUNT: 10000 10000 !!!!!!!!!!!
+11:38:45.246[INFO][utils.py-384]Previous midpoint: -2.57
+11:38:45.246[INFO][utils.py-384]Latest midpoint: 3.4000000000000004
+11:38:45.246[INFO][utils.py-384]Last price: 3.4
+11:38:45.247[INFO][utils.py-384]***************** SINGLE CONTRACT ASK: 3.45 3.45 !!!!!!!!!!!
+11:38:45.502[INFO][utils.py-384]***************** DISTANCE TO PURCHASE PRICE: 0.15000000000000568 0.15000000000000568 !!!!!!!!!!!
+11:38:45.502[INFO][utils.py-384]***************** OPTION PRICE INCREASE: 0.09343887264144912 0.09343887264144912 !!!!!!!!!!
+11:38:45.502[INFO][utils.py-384]***************** BUY STOP ASK ESTIMATE: 3.5434388726414494 3.5434388726414494 !!!!!!
+11:38:45.502[INFO][utils.py-384]***************** 2X PFT TGT LMT ESTIMATE: 3.49 3.49 !!!!!!
+11:38:45.502[INFO][utils.py-384]***************** MAX QTY NET LIQUID: 28 28 !!!!!!!!!!!
+11:38:45.502[INFO][utils.py-384]Great we have ENOUGH quantity available: 28 that we need: 9!!!!!!!
+11:38:45.503[INFO][utils.py-384]Computed quantity based on risk and maximum contracts: 9
+11:38:45.503[INFO][utils.py-384]Now we set the quantity :) :)!!!!!
+11:38:45.503[INFO][utils.py-384]This is a limit order. We are hard coding using last: 2.650000
+11:38:45.503[INFO][utils.py-384]Not setting a limit. We are using a market order for this single leg option!
+11:38:45.503[INFO][utils.py-384]CUSTOMER: Click preview button!
+11:38:45.504[INFO][credit_spread.py-416]Is the time now:2022-09-21 11:38:45.504113-07:00 preMarketOrWeekendOrHoliday orAfterHours=True??????????????????????
+11:38:45.505[INFO][credit_spread.py-433]No!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11:38:45.505[INFO][utils.py-384]Currently the symbol is no longer used for the screenshot file name: AAPL
+11:38:45.505[INFO][trade_idea.py-3062]**************** BUY STOP PARAMETERS INITIAL ****************
+11:38:45.505[INFO][trade_idea.py-3063]underlying_price_at_time_of_alert = 433.08
+11:38:45.505[INFO][trade_idea.py-3064]desired_move = somewhere
+11:38:45.505[INFO][trade_idea.py-3065]buy_stop_up = 156.94
+11:38:45.506[INFO][trade_idea.py-3066]buy_stop_down = 156.11
+11:38:45.506[ERROR][trade_idea.py-1633]ARGH! WE ARE SHORT BIASED! Strategy: Long;somewhere
+NoneType: None
+11:38:45.506[ERROR][trade_idea.py-1635]SO LET'S STRAIGHTEN THAT OUT! Strategy: Long;somewhere
+NoneType: None
+11:38:45.506[INFO][trade_idea.py-1640]Looks like we're placing an order in IBKR to buy a CALL once price crosses above: 156.94?!?!?!
+11:38:45.506[INFO][trade_idea.py-195]BACKTEST RESULT: 999
+11:38:45.617[INFO][credit_spread.py-416]Is the time now:2022-09-21 11:38:45.617751-07:00 preMarketOrWeekendOrHoliday orAfterHours=False??????????????????????
+11:38:45.618[INFO][credit_spread.py-433]No!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11:38:45.619[INFO][main_fidelity.py-3478]Getting the stock ticker from IBKR. Request sent.
+11:38:45.619[INFO][utils.py-384]The maximum loss permitted for this account is: 2500
+11:38:45.619[INFO][credit_spread.py-416]Is the time now:2022-09-21 11:38:45.619744-07:00 preMarketOrWeekendOrHoliday orAfterHours=True??????????????????????
+11:38:45.621[INFO][credit_spread.py-433]No!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11:38:45.621[INFO][utils.py-384]Found account id. Getting account total P&L!
+11:38:45.621[INFO][utils.py-384]Waiting 8 seconds until pnlEvent ... now it is: 2022-09-21 11:38:45.621740
+11:38:53.630[INFO][utils.py-384]Total execution time: 0:00:08.008570
+11:38:53.630[INFO][utils.py-384]CURRENT P&L: nan!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11:38:53.631[INFO][utils.py-384](NOT) Acquiring lock before reqHistoricalData(NOT Async) ...
+11:38:53.631[INFO][utils.py-384]IBKR better get these bars ASAP! No 8 minute delay! Now: 2022-09-21 11:38:53.631348
+11:38:53.861[INFO][utils.py-384]IBKR GOT these bars ASAP? Now: 2022-09-21 11:38:53.631348
+11:38:53.862[INFO][main_fidelity.py-3533]spread.BOBS_DONE: False! So we'll eventually get back here once BOBS_DONE!!!!!!!!!
+11:38:53.862[INFO][main_fidelity.py-3576]BOBS_DONE: False! Waiting for all tasks to complete: [<Task pending name='Task-24' coro=<place_order_ibkr_catch_all() running at C:\Users\Administrator\Desktop\BOING\workspace\update_entities_fidelity_MIM_BUYSTOP\main_fidelity.py:3662>>]!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11:38:53.862[INFO][trade_idea.py-3062]**************** BUY STOP PARAMETERS INITIAL ****************
+11:38:53.862[INFO][trade_idea.py-3063]underlying_price_at_time_of_alert = 433.08
+11:38:53.863[INFO][trade_idea.py-3064]desired_move = somewhere
+11:38:53.863[INFO][trade_idea.py-3065]buy_stop_up = 156.94
+11:38:53.863[INFO][trade_idea.py-3066]buy_stop_down = 156.11
+11:38:53.863[ERROR][trade_idea.py-1633]ARGH! WE ARE SHORT BIASED! Strategy: Long;somewhere
+NoneType: None
+11:38:53.863[ERROR][trade_idea.py-1635]SO LET'S STRAIGHTEN THAT OUT! Strategy: Long;somewhere
+NoneType: None
+11:38:53.863[INFO][trade_idea.py-1640]Looks like we're placing an order in IBKR to buy a CALL once price crosses above: 156.94?!?!?!
+11:38:53.864[INFO][trade_idea.py-195]BACKTEST RESULT: 999
+11:38:53.865[INFO][utils.py-384]Placing order w/ buy stop: 156.94!
+11:38:53.865[INFO][utils.py-384]Placing order w/ stop loss: 156.11!
+11:38:53.865[INFO][utils.py-384]Placing order w/ profit target (UH WE'RE GONNA DOUBLE THIS): 157.76999999999998!
+11:38:53.865[INFO][utils.py-384]Placing order w/ profit target increment: 0.8299999999999841!
+11:38:53.865[INFO][utils.py-384]Placing order for Jana's/bobs strategy: p:None!
+11:38:53.865[INFO][utils.py-384]Placing order for Jana's/bobs strategy: fi:None!
+11:38:53.865[INFO][utils.py-384]Placing order for Jana's/bobs strategy: rz:None!
+11:38:53.866[INFO][utils.py-384]Placing order for Jana's/bobs strategy: jj:True!
+11:38:53.867[INFO][utils.py-632]GodHelpUs!!!!!|lines|{"actual_buy_stop": 156.94, "actual_stop_loss": 156.11, "alert_datetime": "2022-09-21T11:35:00", "away_amount": null, "away_percent": null, "away_price": null, "bar_size_minutes": 1, "original_bar_size_minutes": null, "bars": null, "bars_5_second": null, "bars_5_minute": null, "bars_5_minute_vix": null, "bars_option_2_minute": null, "base_count": 0, "buy_stop": 156.94, "buy_stop_override": null, "buy_stop_option": null, "buy_stop_option_average": null, "buy_stop_1st_valid_leg_out": null, "buy_stop_1st_valid_leg_out_bar": null, "buy_stop_1st_valid_leg_out_bar_index": null, "buy_stop_bar": null, "buy_stop_bar_index": null, "buy_stop_bar_out": null, "found_1st_valid_leg_out": false, "found_lines": true, "get_in": true, "high_of_group": null, "high_of_group_bar": null, "high_of_group_bar_index": null, "hit_it": null, "how_many_times": 0, "how_was_it": null, "how_was_it_daily": null, "invalid": false, "invalid_bar": null, "invalid_bar_index": null, "invalid_reason": null, "jenkins_build_tag": "jenkins-update_entities_fidelity_MIM_BUYSTOP-9303", "leg_in_1st_bar": null, "leg_in_1st_bar_index": null, "leg_in_count": 0, "leg_out_count": 0, "buying_territory": true, "low_of_group": null, "low_of_group_bar": null, "low_of_group_bar_index": null, "start_index": 0, "stop_loss": 156.11, "stop_loss_override": null, "stop_loss_1st_valid_leg_out": null, "trade_start_bar": null, "trade_start_bar_index": null, "trade_stop_bar": null, "trade_stop_bar_index": null, "underlying_symbol": "AAPL", "momentum_stop_loss": null, "away_from_sl_amount": null, "away_from_sl_percent": null, "away_from_sl_price": null, "buy_stop_bar_lower_high": null, "buy_stop_bar_higher_low": null, "second_soldier_bar": null, "second_soldier_bar_index": null, "second_soldier_bar_outside_buy_stop": null, "last_soldier_made_it_to_first_base": null, "how_many_soldiers": null, "trade_entry_bar": null, "trade_entry_bar_index": null, "trade_entry_bar_index_2_minute": null, "trade_entry_bar_index_30_second": null, "first_trade_milestone_index": null, "first_trade_milestone_bar": null, "trade_entry_price": null, "trade_exit_price": null, "trade_exit_price_option": null, "trade_exit_price_option_average": null, "position_in_day": null, "backtest_from_tracker": null, "periods_to_wait_before_transition_to_profit_maximizer": null, "eleven_million": false, "trade_strategy": "reversal_None_ddd", "only_flip": null, "zone": 0, "zone_direction": 0, "zone_direction_target": 0, "zone_target": 0, "risk_zone": null, "risk_zone2": null, "risk_zone_444": null, "continuation_pnl_positive": null, "continuation_done_before_trigger": null, "not_enough_risk": false, "not_enough_risk_after_override": false, "touches": null, "touch": null, "close_minute_threshold": null, "retrace_threshold": null, "retrace_threshold_back": null, "triggered_pre_market": null, "day_of_zone_retrace_factor": null, "days_in_between_retrace_factor": null, "retrace_factor": null, "sequence_index": null, "territory": null, "zone_index": null, "rz": null, "fi": null, "jj": true, "p": null, "ziz_supporting": 0, "ziz_opposing": 0, "reversal_ddd": null, "continuation_ddd": null}
+11:38:53.867[INFO][utils.py-384]spread.lines original buy stop override: None
+11:38:53.867[INFO][utils.py-384]spread.lines original stop loss override: None
+11:38:53.867[INFO][utils.py-384]spread.lines CORRECT (hello world) buy stop override: None
+11:38:53.867[INFO][utils.py-384]spread.lines CORRECT stop loss override: None
+11:38:53.867[INFO][utils.py-384]Our 1:1 profit target/stop loss increment: 0.8299999999999841
+11:38:53.868[INFO][utils.py-384]Profit target (UH WE'RE GONNA DOUBLE THIS): 157.76999999999998
+11:38:53.868[INFO][utils.py-384]Double dip?: False
+11:38:53.868[INFO][utils.py-384]We're using the IB Adaptive algo with priority: Normal
+11:38:53.868[INFO][utils.py-384]Placing BUY LIMIT order when WE (not bank) DETERMINE back test price condition is met: PriceCondition(condType=1, conjunction='a', isMore=True, price=156.94, conId=265598, exch='SMART', triggerMethod=0) if P&L above -2500!
+11:38:53.869[INFO][utils.py-384]We won and deserve to be placed and filled! seconds:0!!!!!!!!!!!!!!!!
+11:38:53.869[INFO][utils.py-384]UNDERLYING PRICE RIGHT BEFORE BUY ORDER SUBMISSION: 156.63
+11:38:53.870[INFO][ib.py-659]placeOrder: New order Trade(contract=Option(conId=577819309, symbol='AAPL', lastTradeDateOrContractMonth='20220923', strike=155.0, right='C', multiplier='100', exchange='SMART', currency='USD', localSymbol='AAPL  220923C00155000', tradingClass='AAPL'), order=Order(orderId=11, clientId=9303912, action='BUY', totalQuantity=9, orderType='MKT', tif='DAY', orderRef='9303_j_b_1137_reversal_None_ddd', algoStrategy='Adaptive', algoParams=[TagValue(tag='adaptivePriority', value='Normal')], conditions=[PriceCondition(condType=1, conjunction='a', isMore=True, price=156.94, conId=265598, exch='SMART', triggerMethod=0)], usePriceMgmtAlgo=True), orderStatus=OrderStatus(orderId=11, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 38, 53, 870492, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)])
+11:38:53.870[INFO][utils.py-384]BOBS_DONE: True! Set this trade as globals.BOBS_DONE_BUY_CONTINUATION order id: 11
+11:38:53.871[INFO][utils.py-384]trade: Trade(contract=Option(conId=577819309, symbol='AAPL', lastTradeDateOrContractMonth='20220923', strike=155.0, right='C', multiplier='100', exchange='SMART', currency='USD', localSymbol='AAPL  220923C00155000', tradingClass='AAPL'), order=Order(orderId=11, clientId=9303912, action='BUY', totalQuantity=9, orderType='MKT', tif='DAY', orderRef='9303_j_b_1137_reversal_None_ddd', algoStrategy='Adaptive', algoParams=[TagValue(tag='adaptivePriority', value='Normal')], conditions=[PriceCondition(condType=1, conjunction='a', isMore=True, price=156.94, conId=265598, exch='SMART', triggerMethod=0)], usePriceMgmtAlgo=True), orderStatus=OrderStatus(orderId=11, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 38, 53, 870492, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)])
+11:38:53.871[INFO][utils.py-384]trade log: [TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 38, 53, 870492, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)]
+11:42:28.738[INFO][utils.py-384]Task Task-26 did not complete.
+11:42:28.738[INFO][utils.py-384]Task Task-25 did not complete.
+11:42:28.739[INFO][utils.py-384]Task Task-27 is done with result: (Trade(contract=Option(conId=577819309, symbol='AAPL', lastTradeDateOrContractMonth='20220923', strike=155.0, right='C', multiplier='100', exchange='SMART', currency='USD', localSymbol='AAPL  220923C00155000', tradingClass='AAPL'), order=Order(orderId=11, clientId=9303912, permId=580579659, action='BUY', totalQuantity=9.0, orderType='MKT', lmtPrice=0.0, auxPrice=0.0, tif='DAY', orderRef='9303_j_b_1137_reversal_None_ddd', algoStrategy='Adaptive', algoParams=[TagValue(tag='adaptivePriority', value='Normal')], conditions=[PriceCondition(condType=1, conjunction='a', isMore=True, price=156.94, conId=265598, exch='SMART', triggerMethod=0)], usePriceMgmtAlgo=True), orderStatus=OrderStatus(orderId=11, status='Submitted', filled=1.0, remaining=8.0, avgFillPrice=3.5, permId=580579659, parentId=0, lastFillPrice=3.5, clientId=9303912, whyHeld='', mktCapPrice=0.0), fills=[Fill(contract=Option(conId=577819309, symbol='AAPL', lastTradeDateOrContractMonth='20220923', strike=155.0, right='C', multiplier='100', exchange='SMART', currency='USD', localSymbol='AAPL  220923C00155000', tradingClass='AAPL'), execution=Execution(execId='0000e183.632abe77.01.01', time=datetime.datetime(2022, 9, 21, 18, 42, 28, tzinfo=datetime.timezone.utc), acctNumber='DU4514644', exchange='NASDAQOM', side='BOT', shares=1.0, price=3.5, permId=580579659, clientId=9303912, orderId=11, liquidation=0, cumQty=1.0, avgPrice=3.5, orderRef='9303_j_b_1137_reversal_None_ddd', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2), commissionReport=CommissionReport(execId='0000e183.632abe77.01.01', commission=1.53915, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0), time=datetime.datetime(2022, 9, 21, 18, 42, 28, 734205, tzinfo=datetime.timezone.utc))], log=[TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 38, 53, 870492, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 38, 54, 226452, tzinfo=datetime.timezone.utc), status='PreSubmitted', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 42, 19, 329893, tzinfo=datetime.timezone.utc), status='Submitted', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 42, 28, 734205, tzinfo=datetime.timezone.utc), status='Submitted', message='Fill 1.0@3.5', errorCode=0), TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 42, 28, 734205, tzinfo=datetime.timezone.utc), status='Submitted', message='', errorCode=0)]), Fill(contract=Option(conId=577819309, symbol='AAPL', lastTradeDateOrContractMonth='20220923', strike=155.0, right='C', multiplier='100', exchange='SMART', currency='USD', localSymbol='AAPL  220923C00155000', tradingClass='AAPL'), execution=Execution(execId='0000e183.632abe77.01.01', time=datetime.datetime(2022, 9, 21, 18, 42, 28, tzinfo=datetime.timezone.utc), acctNumber='DU4514644', exchange='NASDAQOM', side='BOT', shares=1.0, price=3.5, permId=580579659, clientId=9303912, orderId=11, liquidation=0, cumQty=1.0, avgPrice=3.5, orderRef='9303_j_b_1137_reversal_None_ddd', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2), commissionReport=CommissionReport(execId='0000e183.632abe77.01.01', commission=1.53915, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0), time=datetime.datetime(2022, 9, 21, 18, 42, 28, 734205, tzinfo=datetime.timezone.utc)), CommissionReport(execId='0000e183.632abe77.01.01', commission=1.53915, currency='USD', realizedPNL=0.0, yield_=0.0, yieldRedemptionDate=0))
+11:42:28.739[INFO][utils.py-384]Waiting 1 second for buy order to be DONE!
+11:42:29.744[INFO][utils.py-384]Waiting 1 second for buy order to be DONE!
+11:42:30.738[INFO][utils.py-384]We're using the IB Adaptive algo with priority: Normal
+11:42:30.738[INFO][utils.py-384]We ALWAYS USE the underlying price to determine profit taking/stop loss!
+11:42:30.738[INFO][utils.py-384]Place sell order
+11:42:30.740[INFO][ib.py-659]placeOrder: New order Trade(contract=Option(conId=577819309, symbol='AAPL', lastTradeDateOrContractMonth='20220923', strike=155.0, right='C', multiplier='100', exchange='SMART', currency='USD', localSymbol='AAPL  220923C00155000', tradingClass='AAPL'), order=Order(orderId=12, clientId=9303912, action='SELL', totalQuantity=9, orderType='MKT', tif='DAY', orderRef='9303_j_s_1137_reversal_None_ddd', algoStrategy='Adaptive', algoParams=[TagValue(tag='adaptivePriority', value='Normal')], conditions=[PriceCondition(condType=1, conjunction='o', isMore=True, price=157.76999999999998, conId=265598, exch='SMART', triggerMethod=0), PriceCondition(condType=1, conjunction='o', isMore=False, price=156.11, conId=265598, exch='SMART', triggerMethod=0)], usePriceMgmtAlgo=True), orderStatus=OrderStatus(orderId=12, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 42, 30, 739275, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)])
+11:42:30.740[INFO][utils.py-384]sell order trade: Trade(contract=Option(conId=577819309, symbol='AAPL', lastTradeDateOrContractMonth='20220923', strike=155.0, right='C', multiplier='100', exchange='SMART', currency='USD', localSymbol='AAPL  220923C00155000', tradingClass='AAPL'), order=Order(orderId=12, clientId=9303912, action='SELL', totalQuantity=9, orderType='MKT', tif='DAY', orderRef='9303_j_s_1137_reversal_None_ddd', algoStrategy='Adaptive', algoParams=[TagValue(tag='adaptivePriority', value='Normal')], conditions=[PriceCondition(condType=1, conjunction='o', isMore=True, price=157.76999999999998, conId=265598, exch='SMART', triggerMethod=0), PriceCondition(condType=1, conjunction='o', isMore=False, price=156.11, conId=265598, exch='SMART', triggerMethod=0)], usePriceMgmtAlgo=True), orderStatus=OrderStatus(orderId=12, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 42, 30, 739275, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)])
+11:42:30.740[INFO][utils.py-384]sell order trade log: [TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 42, 30, 739275, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)]
+11:42:30.978[INFO][utils.py-384]Task Task-29 did not complete.
+11:42:30.978[INFO][utils.py-384]Task Task-31 did not complete.
+11:42:30.979[INFO][utils.py-384]Task Task-28 did not complete.
+11:42:30.979[INFO][utils.py-384]Task Task-30 is done with result: Trade(contract=Option(conId=577819309, symbol='AAPL', lastTradeDateOrContractMonth='20220923', strike=155.0, right='C', multiplier='100', exchange='SMART', currency='USD', localSymbol='AAPL  220923C00155000', tradingClass='AAPL'), order=Order(orderId=12, clientId=9303912, permId=580580240, action='SELL', totalQuantity=9.0, orderType='MKT', lmtPrice=0.0, auxPrice=0.0, tif='DAY', orderRef='9303_j_s_1137_reversal_None_ddd', algoStrategy='Adaptive', algoParams=[TagValue(tag='adaptivePriority', value='Normal')], conditions=[PriceCondition(condType=1, conjunction='o', isMore=True, price=157.76999999999998, conId=265598, exch='SMART', triggerMethod=0), PriceCondition(condType=1, conjunction='o', isMore=False, price=156.11, conId=265598, exch='SMART', triggerMethod=0)], usePriceMgmtAlgo=True), orderStatus=OrderStatus(orderId=12, status='PreSubmitted', filled=0.0, remaining=9.0, avgFillPrice=0.0, permId=580580240, parentId=0, lastFillPrice=0.0, clientId=9303912, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 42, 30, 739275, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 42, 30, 977051, tzinfo=datetime.timezone.utc), status='PreSubmitted', message='', errorCode=0)])
+11:42:30.979[INFO][utils.py-384]Now that the order was submitted let's wait for it to get filled and also manage the order based on?
+11:42:30.979[INFO][utils.py-384]******* BEGIN - CHECK MY MATH! *******
+11:42:30.980[INFO][utils.py-384]BUY_STOP_PRICE: 156.94
+11:42:30.980[INFO][utils.py-384]is_more: True
+11:42:30.980[INFO][utils.py-384]profit_target: 157.76999999999998
+11:42:30.980[INFO][utils.py-384]stop_loss: 156.11
+11:42:30.980[INFO][utils.py-384]total_distance_between_stop_loss_and_pft_tgt: 1.66
+11:42:30.980[INFO][utils.py-384]******* END - CHECK MY MATH! *******
+11:42:30.980[INFO][utils.py-384]The order status is: PreSubmitted.
+11:42:30.981[INFO][credit_spread.py-416]Is the time now:2022-09-21 11:42:30.980048-07:00 preMarketOrWeekendOrHoliday orAfterHours=True??????????????????????
+11:42:30.981[INFO][credit_spread.py-433]No!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11:42:30.982[INFO][credit_spread.py-416]Is the time now:2022-09-21 11:42:30.982042-07:00 preMarketOrWeekendOrHoliday orAfterHours=True??????????????????????
+11:42:30.982[INFO][credit_spread.py-433]No!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11:42:30.983[INFO][utils.py-384]Wait 4400000 periods to reach 1:1 profit target. TODO: 2nd piece will use profit maximizer!!
+11:42:30.983[INFO][utils.py-384]More specifically checking for 264000000.0 seconds! bar_size: 1
+11:42:32.000[INFO][utils.py-384]We are at: 156.98000000000002. Did we reach the goal? Pt:157.76999999999998 Sl:156.11 Seconds:0
+11:42:47.061[INFO][utils.py-384]We are at: 156.945. Did we reach the goal? Pt:157.76999999999998 Sl:156.11 Seconds:15
+11:43:02.099[INFO][utils.py-384]We are at: 157.1. Did we reach the goal? Pt:157.76999999999998 Sl:156.11 Seconds:30
+11:43:17.215[INFO][utils.py-384]We are at: 157.34. Did we reach the goal? Pt:157.76999999999998 Sl:156.11 Seconds:45
+11:43:32.285[INFO][utils.py-384]We are at: 157.44. Did we reach the goal? Pt:157.76999999999998 Sl:156.11 Seconds:60
+11:43:45.382[INFO][utils.py-384]Profit target hit: 157.76999999999998. Proceed!
+11:43:45.382[INFO][utils.py-384]We are in 1:1 profit target mode and order should fill VERY SOON!!!!!!!!!!!!!!!
+11:43:47.386[INFO][utils.py-384]We are at: 157.72. Did we reach the goal? Pt:157.76999999999998 Sl:156.11 Seconds:75
+11:43:48.390[INFO][utils.py-384]Profit target hit: 157.76999999999998. Proceed!
+11:43:48.390[INFO][utils.py-384]We are in 1:1 profit target mode and order should fill VERY SOON!!!!!!!!!!!!!!!
+11:43:49.392[INFO][utils.py-384]Profit target hit: 157.76999999999998. Proceed!
+11:43:49.392[INFO][utils.py-384]We are in 1:1 profit target mode and order should fill VERY SOON!!!!!!!!!!!!!!!
+11:43:50.388[INFO][utils.py-384]Profit target hit: 157.76999999999998. Proceed!
+11:43:50.388[INFO][utils.py-384]We are in 1:1 profit target mode and order should fill VERY SOON!!!!!!!!!!!!!!!
+11:43:51.398[INFO][utils.py-384]Profit target hit: 157.76999999999998. Proceed!
+11:43:51.398[INFO][utils.py-384]We are in 1:1 profit target mode and order should fill VERY SOON!!!!!!!!!!!!!!!
+11:43:51.399[INFO][utils.py-384]We placed sell order and it triggered!
+11:43:51.399[INFO][utils.py-384]The order status is: Filled.
+11:43:51.399[INFO][main_fidelity.py-3578]BOBS_DONE: False!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11:43:51.399[INFO][utils.py-384]Trade(contract=Option(conId=577819309, symbol='AAPL', lastTradeDateOrContractMonth='20220923', strike=155.0, right='C', multiplier='100', exchange='SMART', currency='USD', localSymbol='AAPL  220923C00155000', tradingClass='AAPL'), order=Order(orderId=12, clientId=9303912, permId=580580240, action='SELL', totalQuantity=9.0, orderType='MKT', lmtPrice=0.0, auxPrice=0.0, tif='DAY', orderRef='9303_j_s_1137_reversal_None_ddd', algoStrategy='Adaptive', algoParams=[TagValue(tag='adaptivePriority', value='Normal')], conditions=[PriceCondition(condType=1, conjunction='o', isMore=True, price=157.76999999999998, conId=265598, exch='SMART', triggerMethod=0), PriceCondition(condType=1, conjunction='o', isMore=False, price=156.11, conId=265598, exch='SMART', triggerMethod=0)], usePriceMgmtAlgo=True), orderStatus=OrderStatus(orderId=12, status='Filled', filled=9.0, remaining=0.0, avgFillPrice=3.983333, permId=580580240, parentId=0, lastFillPrice=4.0, clientId=9303912, whyHeld='', mktCapPrice=0.0), fills=[Fill(contract=Option(conId=577819309, symbol='AAPL', lastTradeDateOrContractMonth='20220923', strike=155.0, right='C', multiplier='100', exchange='SMART', currency='USD', localSymbol='AAPL  220923C00155000', tradingClass='AAPL'), execution=Execution(execId='0000e183.632ac169.01.01', time=datetime.datetime(2022, 9, 21, 18, 43, 48, tzinfo=datetime.timezone.utc), acctNumber='DU4514644', exchange='CBOE2', side='SLD', shares=3.0, price=3.95, permId=580580240, clientId=9303912, orderId=12, liquidation=0, cumQty=3.0, avgPrice=3.95, orderRef='9303_j_s_1137_reversal_None_ddd', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=1), commissionReport=CommissionReport(execId='0000e183.632ac169.01.01', commission=0.871127, currency='USD', realizedPNL=130.561423, yield_=0.0, yieldRedemptionDate=0), time=datetime.datetime(2022, 9, 21, 18, 43, 48, 548539, tzinfo=datetime.timezone.utc)), Fill(contract=Option(conId=577819309, symbol='AAPL', lastTradeDateOrContractMonth='20220923', strike=155.0, right='C', multiplier='100', exchange='SMART', currency='USD', localSymbol='AAPL  220923C00155000', tradingClass='AAPL'), execution=Execution(execId='0000e183.632ac16b.01.01', time=datetime.datetime(2022, 9, 21, 18, 43, 49, tzinfo=datetime.timezone.utc), acctNumber='DU4514644', exchange='CBOE2', side='SLD', shares=5.0, price=4.0, permId=580580240, clientId=9303912, orderId=12, liquidation=0, cumQty=8.0, avgPrice=3.98125, orderRef='9303_j_s_1137_reversal_None_ddd', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=1), commissionReport=CommissionReport(execId='0000e183.632ac16b.01.01', commission=1.45245, currency='USD', realizedPNL=242.6018, yield_=0.0, yieldRedemptionDate=0), time=datetime.datetime(2022, 9, 21, 18, 43, 49, 533383, tzinfo=datetime.timezone.utc)), Fill(contract=Option(conId=577819309, symbol='AAPL', lastTradeDateOrContractMonth='20220923', strike=155.0, right='C', multiplier='100', exchange='SMART', currency='USD', localSymbol='AAPL  220923C00155000', tradingClass='AAPL'), execution=Execution(execId='0000e183.632ac16d.01.01', time=datetime.datetime(2022, 9, 21, 18, 43, 50, tzinfo=datetime.timezone.utc), acctNumber='DU4514644', exchange='NASDAQBX', side='SLD', shares=1.0, price=4.0, permId=580580240, clientId=9303912, orderId=12, liquidation=0, cumQty=9.0, avgPrice=3.983333, orderRef='9303_j_s_1137_reversal_None_ddd', evRule='', evMultiplier=0.0, modelCode='', lastLiquidity=2), commissionReport=CommissionReport(execId='0000e183.632ac16d.01.01', commission=1.17049, currency='USD', realizedPNL=47.64036, yield_=0.0, yieldRedemptionDate=0), time=datetime.datetime(2022, 9, 21, 18, 43, 50, 548993, tzinfo=datetime.timezone.utc))], log=[TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 42, 30, 739275, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 42, 30, 977051, tzinfo=datetime.timezone.utc), status='PreSubmitted', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 43, 47, 647558, tzinfo=datetime.timezone.utc), status='Submitted', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 43, 48, 548539, tzinfo=datetime.timezone.utc), status='Submitted', message='Fill 3.0@3.95', errorCode=0), TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 43, 48, 548539, tzinfo=datetime.timezone.utc), status='Submitted', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 43, 49, 533383, tzinfo=datetime.timezone.utc), status='Submitted', message='Fill 5.0@4.0', errorCode=0), TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 43, 49, 533383, tzinfo=datetime.timezone.utc), status='Submitted', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 43, 50, 548993, tzinfo=datetime.timezone.utc), status='Submitted', message='Fill 1.0@4.0', errorCode=0), TradeLogEntry(time=datetime.datetime(2022, 9, 21, 18, 43, 50, 548993, tzinfo=datetime.timezone.utc), status='Filled', message='', errorCode=0)])
+11:43:51.400[ERROR][utils.py-348]CUSTOMER: Keep on refreshing the order page until you get filled ... if you want :)
+NoneType: None
+11:43:51.401[ERROR][trade.py-291]We just opened a spread! We need to alert the troops! Everyone to your posts!
+NoneType: None
+11:43:51.402[INFO][utils.py-384]The profit target additive: 0.2570000000000001
+11:43:51.402[INFO][utils.py-384]We also trail by the profit target! 1:1 trade unless customer makes changes!
+11:43:51.403[INFO][utils.py-384]Let's sell this bad boy!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11:43:51.403[INFO][utils.py-384]The original trailing stop $ amount: 0.257000
+11:43:51.403[INFO][utils.py-384]Now we update it based on the Penny Pilot Program :)
+11:43:51.403[INFO][utils.py-384]The adjusted trailing stop $ amount: 0.3
+11:43:51.403[INFO][utils.py-384]****** ESTIMATED AVERAGE RISK FOR MARKET ORDER ******
+11:43:51.404[INFO][utils.py-384]The ESTIMATED AVERAGE RISK per contract is: -0.3
+11:43:51.404[INFO][utils.py-384]The number of contracts (quantity) is: 9
+11:43:51.404[INFO][utils.py-384]The ESTIMATED AVERAGE RISK total is: -270.0
+11:43:51.404[INFO][utils.py-384]Now we place the closing order!!!!!
+11:43:51.404[INFO][options.py-874]https://oltx.fidelity.com/ftgw/fbc/oftrade/EntrOrder?ACCOUNT={AQAAABAAAAAQk4xXrotpqxda+/AHlisgVZ5i49Kj9xAl15hrw+SVxwM=}&ORDER_TYPE=O&PRICE_TYPE=M&SYMBOL=-AAPL220923C155&QTY=9&ORDER_ACTION=SCLOSE
+11:43:51.404[INFO][utils.py-384]CUSTOMER: Set order type to: Trailing Stop Loss ($)
+11:43:51.404[INFO][utils.py-384]CUSTOMER: Set trailing type to: Last
+11:43:51.405[INFO][utils.py-384]CUSTOMER: Here's the risk details: AAPL $156.82 Risking -270.0!!!!
+11:43:51.405[INFO][utils.py-384]CUSTOMER: Click on preview button then on next page place order button!
+11:43:51.405[INFO][utils.py-384]The previous time taken in seconds was: 346.1179897785187
+11:43:51.406[INFO][utils.py-384]The previous time taken in seconds was: 346.11898732185364
+11:43:51.408[INFO][utils.py-384]The trailing stop filled at sale price: True
+11:43:51.408[INFO][utils.py-384]The purchase price was: -2.57
+11:43:51.408[INFO][main_fidelity.py-359]BOBS_DONE: True!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11:43:51.409[INFO][main_fidelity.py-364]BOBS_DONE: True! He's now waiting for pending tasks to complete: [<Task finished name='Task-24' coro=<place_order_ibkr_catch_all() done, defined at C:\Users\Administrator\Desktop\BOING\workspace\update_entities_fidelity_MIM_BUYSTOP\main_fidelity.py:3662> result=Trade(contrac...errorCode=0)])>]!!
+11:43:52.845[INFO][main.py-369]Since we placed an order we'll exit the process clean and have a green Jenkins build!!!!!!!!
+11:43:52.852[INFO][main.py-389]Total execution time: 0:05:47.343508
+11:43:52.852[INFO][main.py-54]No need for a browser in no_fidelity mode so no need to close Chrome!
+11:43:52.852[INFO][ib.py-280]Disconnecting from 18.219.21.141:7496, 1.37 kB sent in 21 messages, 305 kB received in 7900 messages, session time 347 s.
+11:43:52.852[INFO][client.py-229]Disconnecting
