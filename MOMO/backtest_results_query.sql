@@ -1,0 +1,68 @@
+SELECT distinct result,
+	sym,
+	trade_start_bar_date,
+	actual_buy_stop,
+	actual_stop_loss,
+	bar_size_minutes,
+	buy_stop,
+	how_was_it,
+	buying_territory,
+	stop_loss,
+	buy_stop_bar_date,
+	trade_strategy,
+	scenario_variation,
+	trade_exit_price,
+	leg_in_bar_date,
+	trade_entry_bar_date,
+	trade_stop_bar_date,
+	trade_entry_price,
+	riskzone,
+	riskzone2,
+	continuation_pnl_positive,
+	continuation_done_before_trigger,
+	not_enough_risk,
+	not_enough_risk_after_override,
+	away_from_sl_percent,
+	riskzone3,
+	trade_start_bar_timestamp,
+	touches,
+	touch,
+	close_minute_threshold,
+	triggered_pre_market,
+	retrace_threshold,
+	retrace_threshold_back,
+	retrace_factor,
+	day_of_zone_retrace_factor,
+	days_in_between_retrace_factor,
+	how_was_it_daily,
+	zone_index,
+	daily_leg_in_bar_date,
+	daily_buy_stop_bar_date,
+	bobs_key,
+	bobs_strategy,
+	probability,
+	conforming_within,
+	conforming_not_within,
+	opposing_within,
+	opposing_not_within,
+	conforming_within_today,
+	conforming_not_within_today,
+	opposing_within_today,
+	opposing_not_within_today,
+	buy_stop_bar_ema8,
+	buy_stop_bar_ema21,
+	buy_stop_bar_volume,
+	opening_range_average_volume,
+	ema_crossed_under_2_minute,
+	ema_crossed_over_2_minute
+FROM "AwsDataCatalog"."resultsv1"."v1show_me_jana"
+	left outer join "AwsDataCatalog"."resultsv1"."bobs_touches" on bobs_key = concat(sym, '_', Cast(IF(touches > 0, 1, 0) AS varchar))
+	and (
+		bobs_strategy = scenario_variation
+		or bobs_strategy || '_ddd' = scenario_variation
+	)
+--where  (
+--		trade_start_bar_timestamp BETWEEN TIMESTAMP '2022-10-05 00:00:00' AND TIMESTAMP '2022-10-05 23:59:59'
+--		or trade_start_bar_timestamp BETWEEN TIMESTAMP '2022-07-22 00:00:00' AND TIMESTAMP '2022-07-22 23:59:59'
+--	)
+--	and ema_crossed_under_2_minute IS NOT NULL
