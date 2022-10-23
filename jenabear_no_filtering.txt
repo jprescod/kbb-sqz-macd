@@ -1,0 +1,1 @@
+bear|jesse=False|rsi=True|rv=0|rov=False|in=True|ons=nan|offs=nan
