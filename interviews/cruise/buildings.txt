@@ -1,0 +1,84 @@
+#
+# Click `Run` to execute the snippet below!
+#
+
+#import java.io.*;
+#import java.util.*;
+
+
+#            _____________                                      
+#            |             |      
+#            |             |        
+#            |             |    
+#     _ _    |             |        
+#    |   |   |             |    
+#    |   |   |          ___|___
+#    |   |   |         | | | | |   
+# ___|___|___|_________|_|_|_|_|___
+#    |   |   |         | |  | |
+#    X   Y   A         B C   D
+
+# struct Building {
+#    int start;
+#    int end;
+#    int height;
+#};
+
+
+#*/
+
+def calculate_area(buildings):
+    if not buildings:
+        return 0
+
+    heights_by_position = {}
+    for building in buildings:
+        start: int = building[0]
+        end: int = building[1]
+        height: int = building[2]
+        for i in range(start, end):
+            if i in heights_by_position:
+                max_height = heights_by_position[i]
+            else:
+                max_height = 0
+            heights_by_position[i] = max(max_height, height)
+    print(heights_by_position)
+
+    total_area: int = 0
+    
+    for current_height in heights_by_position.values():
+        total_area = total_area + current_height
+    
+    return total_area
+
+single_building = [
+    [0, 4, 4]
+]
+
+area = calculate_area(single_building)
+assert area == 16, f"area:{area}"
+
+# Expected area = 125
+two_overlapping_buildings = [
+    [0, 10, 10], # 100
+    [5, 15, 5] # 50 (25 additional square units)
+]
+
+# two_overlapping_buildings
+area = calculate_area(two_overlapping_buildings)
+assert area == 125, f"area:{area}"
+
+# Single building
+# Expected total area = 127
+buildings = [
+    [0, 4, 4], # 16
+    [8, 21, 8], # 104
+    [18, 25, 2] # Overlap is a 4 x 2 region (8 units) total area = 14 which is 6 nonoverlapping
+]
+
+# Multiple with 1 overlapping
+area = calculate_area(buildings)
+assert area == 128, f"area:{area}"
+
+area = calculate_area(None)
+assert area == 0, f"area:{area}"

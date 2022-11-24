@@ -1,0 +1,41 @@
+Simulation of a particular scenario the car may be going through.
+A YAML description file.
+
+Car will stop behind a double parked vehicle.
+
+The planning simulator.
+
+Relocate the car to left of double parked vehicle.
+
+Goal position.
+
+Degraded state where an internal failure inside of the car ...
+
+Remote assistance front-end perspective ... test the application against these edge cases and scenarios.
+
+System testing engineering team. They are writing the planning scenarios for the particular feature we are building.
+
+How to craft those scenarios and setup a plan ... some ownership in the AV team.
+
+The other side of that is this thing called matrix ... not interact with much (his team) but could be an interesting tool.
+
+A 3D simulation of various road conditions ... entire city of San Francisco modeled.
+
+The planning simulator mocks up all the lightar sensor inputs ...
+
+The matrix thing adds on top of that core behavior testing a 3D model of the world.
+
+Consume through the lidar perception system ... much more extensive testing. Full perception stack involved.
+
+The safety aspect of it too ... when these tests don't work properly ... I really hope that feature I built ... a safety critical event.
+
+
+
+
+There is a call-center with trained people, maybe it is like midnight ... did my code for that button ...
+
+React, Redux, WebRTC (real-time communications protocol) video streams come through that. WebGL for map rendering.
+
+Hosted web app ... Cyprus ... a lot to bite off.
+
+
