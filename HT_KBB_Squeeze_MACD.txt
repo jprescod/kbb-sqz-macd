@@ -19,8 +19,8 @@ inputs:
 	//---------- Alert Inputs
 	bool alertIfCrossUp(True) [DisplayName = "Alert if Cross Up", ToolTip = ""],
 	bool alertIfCrossDown(True) [DisplayName = "Alert if Cross Down", ToolTip = ""],
-	bool alertIfUptrendEnd(True) [DisplayName = "Alert if Uptrend Ends", ToolTip = ""],
-	bool alertIfDowntrendEnd(True) [DisplayName = "Alert if Downtrend Ends", ToolTip = ""],
+	bool alertIfUptrendEnd(False) [DisplayName = "Alert if Uptrend Ends", ToolTip = ""],
+	bool alertIfDowntrendEnd(False) [DisplayName = "Alert if Downtrend Ends", ToolTip = ""],
     bool alertIfKbbFires(False) [DisplayName = "Alert if KBB Fires", ToolTip = ""],
 	//---------- Color Inputs
 	int posUpColor(Cyan) [DisplayName = "Color MACD Up > 0", ToolTip = ""],
@@ -54,6 +54,8 @@ Once Begin
 	isChart = GetAppInfo( aiApplicationType ) = cChart;
 End;
 
+//https://markplex.com/free-tutorials/tradestation-easylanguage-quicktips/quick-tip-36/
+Once Clearprintlog ;
 //---------- Keltner Section
 kAvg = Average(kPrice, kLength);
 kShift = numATRs * AvgTrueRange(kLength);
@@ -67,6 +69,8 @@ stdDev = StandardDev( bbPrice, bbLength, 1 ) ;
 bbUpperBand = bbAvg + numDevsUp * stdDev ;
 bbLowerBand = bbAvg - numDevsDown * stdDev ;
 bbWidth = bbUpperBand - bbLowerBand;
+
+Print(D, T, "kAvg|", kAvg, "|kShift|", kShift, "|kUpperBand|", kUpperBand, "|kLowerBand|", kLowerBand, "|kWidth|", kWidth, "|bbAvg|", bbAvg, "|stdDev|", stdDev, "|bbUpperBand", bbUpperBand, "|bbLowerBand|", bbLowerBand, "|bbWidth|", bbWidth) ;
 
 //---------- KBB Section
 isSqueeze = IFFLogic(kWidth > 0, (bbWidth / kWidth) < 1, False);
